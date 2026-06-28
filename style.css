@@ -1,0 +1,173 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* Background Image */
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url("road.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container{
+    display:flex;
+    gap:80px;
+    align-items:center;
+}
+
+.brand-section{
+    color:white;
+}
+
+.brand-section h1{
+    font-size:4.5rem;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.brand-section p{
+    color:#facc15;
+    font-size:1.4rem;
+    letter-spacing:1px;
+}
+
+.card-container{
+    perspective:1000px;
+}
+
+#flip{
+    display:none;
+}
+
+.card{
+    width:380px;
+    height:450px;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:0.8s;
+}
+
+#flip:checked ~ .card{
+    transform:rotateY(180deg);
+}
+
+.front,
+.back{
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    /* Glass Effect */
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+
+    padding:35px;
+    backface-visibility:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.back{
+    transform:rotateY(180deg);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:white;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    padding:14px;
+    margin-bottom:18px;
+
+    border:none;
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.15);
+    color:white;
+
+    font-size:15px;
+    outline:none;
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:10px;
+
+    background:#facc15;
+    color:#111827;
+
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#eab308;
+}
+
+label{
+    display:block;
+    margin-top:25px;
+    text-align:center;
+    color:#93c5fd;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.quote{
+    text-align:center;
+    margin-top:15px;
+    color:#ddd;
+    font-size:13px;
+}
+
+@media(max-width:850px){
+
+    .container{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .brand-section{
+        text-align:center;
+    }
+
+    .brand-section h1{
+        font-size:3rem;
+    }
+
+    .card{
+        width:330px;
+    }
+}
+

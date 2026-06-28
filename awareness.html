@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Road Safety Awareness</title>
+
+<link rel="stylesheet" href="awareness.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+
+<a href="dashboard.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<button id="videoBtn">
+🎥 Road Safety Video
+</button>
+
+</div>
+
+<div class="header">
+
+<h1>🚦 Road Safety Awareness</h1>
+
+<p>Learn • Follow • Prevent</p>
+
+</div>
+
+<div class="container">
+
+<div class="info-card">
+
+<h2>🪖 Helmet Safety</h2>
+
+<p>
+Wearing a helmet significantly reduces the risk of
+head injuries during accidents. Every rider and
+pillion rider should wear a certified helmet.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h2>🚗 Seat Belt Safety</h2>
+
+<p>
+Seat belts protect passengers from serious injuries.
+Always wear a seat belt, even on short trips.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h2>⚡ Over Speeding</h2>
+
+<p>
+Over speeding increases
+accident risk . Follow speed limits and drive responsibly. It may be fun to do that but it costs life.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h2>📱No Mobile Usage while Driving</h2>
+
+<p>
+Using a mobile phone while driving distracts the driver.This can increase the risk of accidents and endanger both the driver and others.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h2>🏍️ Rash Driving</h2>
+
+<p>
+Rash driving puts everyone at risk. Donot entertain rash driving. It can cause severe accidents and endanger lives.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h2>🚦 Traffic Signal Discipline</h2>
+
+<p>
+Obey all traffic lights and road signs. Do not jump red signals. Respect pedestrian crossings
+</p>
+
+</div>
+ 
+<div class="info-card">
+
+<h2>🍺 Drunk and Drive</h2>
+
+<p>
+Always remember donot drink and drive because alcohol affects vehicle contol and reduces concentration. Choose a safe ride home instead of driving after drinking
+</p>
+
+</div>
+ 
+
+<div class="info-card">
+
+<h2>🌧️ Driving in Bad Weather</h2>
+
+<p>
+Slow down during rain or fog. Keep headlights on when visibility is low. Increase distance between vehicles.
+</p>
+
+</div>
+
+</div>
+
+<div id="videoModal" class="video-modal">
+
+<div class="video-box">
+
+<button id="closeVideo">✖ Close</button>
+
+<video controls>
+<source src="awareness.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</div>
+
+<script>
+
+const videoBtn =
+document.getElementById("videoBtn");
+
+const videoModal =
+document.getElementById("videoModal");
+
+const closeVideo =
+document.getElementById("closeVideo");
+
+videoBtn.onclick = () => {
+
+videoModal.style.display = "flex";
+
+};
+
+closeVideo.onclick = () => {
+
+videoModal.style.display = "none";
+
+};
+
+</script>
+
+</body>
+</html>
+
+

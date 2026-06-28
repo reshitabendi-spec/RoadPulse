@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Total Reports</title>
+
+<link rel="stylesheet" href="reports.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+
+<a href="dashboard.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+</div>
+
+<div class="header-content">
+
+<h1>📊 Total Reports</h1>
+
+<p>Community reported road safety issues</p>
+
+</div>
+
+<div class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search by Area (e.g. Yendada)">
+
+</div>
+
+<div id="reportCount">
+📊 Total Reports: 0
+</div>
+
+<div id="mostReportedArea">
+🏆 Most Reported Area: Loading...
+</div>
+
+<button id="statsBtn">📊 Hazard Statistics</button>
+
+<div id="statsPopup">
+
+<div class="stats-card">
+
+<h2>📊 Hazard Statistics</h2>
+
+<div id="statsContent">
+
+</div>
+
+<button id="closeStats">❌ Close</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="reportsContainer">
+
+</div>
+
+<script type="module" src="reports.js"></script>
+
+</body>
+</html>
+

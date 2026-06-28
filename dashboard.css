@@ -1,0 +1,190 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.82),
+    rgba(0,0,0,0.82)),
+    url("road.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+/* BACK BUTTON */
+
+.top-bar{
+
+    padding:25px 35px;
+}
+
+.back-btn{
+
+    color:white;
+    font-size:28px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    color:#facc15;
+}
+
+/* APP NAME */
+
+.header-content{
+
+    text-align:center;
+
+    margin-top:-20px;
+}
+
+.header-content h1{
+
+    font-size:52px;
+    margin-bottom:10px;
+}
+
+.header-content p{
+
+    color:#facc15;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:35px;
+
+    padding:80px 20px;
+
+    flex-wrap:wrap;
+}
+
+/* CARD */
+
+.card{
+
+    width:300px;
+    height:280px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:0.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+}
+
+.card i{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+}
+
+.card h2{
+
+    margin-bottom:12px;
+}
+
+.card p{
+
+    color:#ddd;
+    padding:0 15px;
+}
+
+/* REPORT */
+
+.report{
+
+    border:3px solid #ef4444;
+}
+
+.report i{
+
+    color:#ef4444;
+}
+
+/* AWARENESS */
+
+.awareness{
+
+    border:3px solid #facc15;
+}
+
+.awareness i{
+
+    color:#facc15;
+}
+
+/* REPORTS */
+
+.reports{
+
+    border:3px solid #3b82f6;
+}
+
+.reports i{
+
+    color:#3b82f6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .header-content h1{
+
+        font-size:40px;
+    }
+
+    .dashboard{
+
+        flex-direction:column;
+
+        padding:40px 20px;
+    }
+
+    .card{
+
+        width:320px;
+    }
+}

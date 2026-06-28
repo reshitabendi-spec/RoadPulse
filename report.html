@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report an Issue</title>
+
+<link rel="stylesheet" href="report.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    <a href="dashboard.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+</div>
+
+<div class="form-card">
+
+    <h2 class="report-title">
+<span class="hazard-icon">🚧</span>
+Report Road Hazard
+</h2>
+
+    <p class="report-subtitle">
+        Help make roads safer by reporting unsafe conditions
+    </p>
+
+    <label for="imageInput" class="upload-box">
+
+<div class="upload-icon">📷</div>
+
+<div class="upload-text">
+Take Photo
+</div>
+
+</label>
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+capture="environment"
+style="display:none;">
+
+    <img id="preview" style="display:none;">
+
+    <select id="issueType">
+        <option value="">⚠️ Select Issue Type</option>
+        <option>Unsafe Speed Breaker</option>
+        <option>Pothole</option>
+        <option>Missing Zebra Crossing</option>
+        <option>Uneven Road</option>
+        <option>Illegal Truck Parking</option>
+        <option>Poor Road Lighting</option>
+        <option>Traffic Signal Issue</option>
+    </select>
+
+    <input
+        type="text"
+        id="landmark"
+        placeholder="📍 Landmark / Area Name">
+
+    <textarea
+        id="description"
+        placeholder="📝 Describe the issue"></textarea>
+
+    <button id="locationBtn">
+        📍 Get Current Location
+    </button>
+
+    <p id="locationText"></p>
+
+    <button id="submitBtn">
+        🚀 Submit Report
+    </button>
+
+</div>
+
+<script type="module" src="report.js"></script>
+
+</body>
+</html>
+
